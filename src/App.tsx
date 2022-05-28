@@ -12,6 +12,12 @@ import DeviceUpdate from './routes/Device/routes/DeviceUpdate/DeviceUpdate';
 import DeviceOutlet from './routeoutlets/DeviceOutlet';
 import ServiceOutlet from './routeoutlets/ServiceOutlet';
 import Services from './routes/Services/Services';
+import Number from './routes/Number/Number';
+import Reports from './routes/Reports/Reports';
+import Systems from './routes/Systems/Systems';
+import Accouts from './routes/Systems/Accouts/Accouts';
+import Roles from './routes/Systems/Roles/Roles';
+import Diary from './routes/Systems/Diary/Diary';
 function App() {
   return (
     <HashRouter>
@@ -21,6 +27,8 @@ function App() {
         <Route element={<MenuOutlet />}>
           <Route path="UserProfile" element={<UserProfile />}></Route>
           <Route path="Dashboard" element={<Dashboard />}></Route>
+          <Route path="Number" element={<Number/>}></Route>
+          <Route path="Reports" element={<Reports/>}></Route>
           <Route path="Device" element={<DeviceOutlet />}>
             <Route index element={<Device />}></Route>
             <Route path="DeviceAdd" element={<DeviceAdd />}></Route>
@@ -30,6 +38,13 @@ function App() {
 
           <Route path="Service" element={<ServiceOutlet />}>
             <Route index element={<Services />}></Route>
+          </Route>
+
+          <Route path="Systems" element={<Systems />}>
+            <Route index element={<Systems />}></Route>
+            <Route path="Accouts" element={<Accouts />}></Route>
+            <Route path="Roles" element={<Roles />}></Route>
+            <Route path="Diary" element={<Diary />}></Route>
           </Route>
         </Route>
       </Routes>

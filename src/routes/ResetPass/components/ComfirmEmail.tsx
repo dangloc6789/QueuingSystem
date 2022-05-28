@@ -24,7 +24,7 @@ export default function ComfirmEmail({ handleNext }: propType) {
   });
   const onSubmit = (data: formType) => {
     //Omit comfirm email api logic
-    if (data.email === "phuong6428@gmail.com") {
+    if (data.email === "danglocdalat@gmail.com") {
       //Click to switch to ComfirmPass
       handleNext()
     } else {alert("Email không tồn tại trong hệ thống")}
