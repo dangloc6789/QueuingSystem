@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit"
 import NumberReducer, { numberType } from "../reducer/NumberReducer"
 
-const getNumber = createAsyncThunk("device/getAll", async () => {
+const getNumber = createAsyncThunk("number/getAll", async () => {
   //fake get data from server
   const promise:Promise<Array<numberType>> = new Promise((resolve,reject) => {
     setTimeout(()=>resolve((NumberReducer.getInitialState().data)),1000)
