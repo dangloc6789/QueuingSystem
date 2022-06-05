@@ -75,7 +75,7 @@ const tableColumn = [
   },
   {
     title: 'Nguồn cấp',
-    dataIndex: 'IPAddress',
+    dataIndex: 'DeviceType',
   },
 
 ]

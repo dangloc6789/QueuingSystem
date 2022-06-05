@@ -23,7 +23,8 @@ import ServiceDetail from './routes/Services/routes/ServicesDetail/ServiceDetail
 import ServiceUpdate from './routes/Services/routes/ServicesUpdate/ServiceUpdate';
 import NumberAdd from './routes/Number/routes/NumberAdd/NumberAdd';
 import NumberDetail from './routes/Number/routes/NumberDetail/NumberDetail';
-import AddRoles from './routes/Services/routes/AddRoles/AddRoles';
+import AddRoles from './routes/Systems/Roles/routes/AddRoles/AddRoles';
+import Systems from './routes/Systems/Systems';
 
 function App() {
   return (
@@ -31,15 +32,20 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />}></Route>
         <Route path="/Reset" element={<ResetPass />}></Route>
+
         <Route element={<MenuOutlet />}>
+
           <Route path="UserProfile" element={<UserProfile />}></Route>
           <Route path="Dashboard" element={<Dashboard />}></Route>
+
           <Route path="Number" element={<NumberOutlet />}>
             <Route index element={<Number />}></Route>
             <Route path="NumberAdd" element={<NumberAdd />}></Route>
             <Route path="NumberDetail/:ProductID" element={<NumberDetail />}></Route>
           </Route>
+
           <Route path="Reports" element={<Reports />}></Route>
+
           <Route path="Device" element={<DeviceOutlet />}>
             <Route index element={<Device />}></Route>
             <Route path="DeviceAdd" element={<DeviceAdd />}></Route>
@@ -55,16 +61,18 @@ function App() {
             <Route path="ServiceUpdate/:ProductID" element={<ServiceUpdate />}></Route>
           </Route>
 
-          <Route path="Systems" element={<Roles />}>
-            <Route index element={<Roles />}></Route>
-            <Route path="Accouts" element={<Accouts />}></Route>
-            <Route path="Roles" element={<Roles />}>
-
-            </Route>
-            <Route path="AddRole" element={<AddRoles />}></Route>
-            <Route path="Diary" element={<Diary />}></Route>
-
+          <Route path="Systems/Accouts" element={<Accouts />}>
+            <Route index element={<Accouts />}></Route>        
           </Route>
+
+          <Route path="Systems/Roles" element={<Roles />}>
+            <Route index element={<Roles />}></Route>        
+          </Route>
+
+          <Route path="Systems/Diary" element={<Diary />}>
+            <Route index element={<Diary />}></Route>        
+          </Route>
+          
         </Route>
       </Routes>
     </HashRouter>

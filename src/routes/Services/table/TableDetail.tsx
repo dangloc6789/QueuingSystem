@@ -26,10 +26,11 @@ const style = {
     cursor: "pointer"
   }
 }
+
 const tableColumnDetail = [
   {
     title: 'Số thứ tự',
-    dataIndex: 'ServiceCode',
+    dataIndex: 'STT',
   },
   {
     title: 'Trạng thái hoạt động',

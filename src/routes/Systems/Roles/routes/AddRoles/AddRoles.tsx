@@ -1,8 +1,8 @@
 import styles from "./styles.module.css";
 import { Controller } from "react-hook-form";
-import InputC from "../../../../components/InputC/InputC";
-import ButtonC from "../../../../components/ButtinC/ButtonC";
-import CheckBox from "../../../../components/CheckBox/CheckBox";
+import InputC from "../../../../../components/InputC/InputC";
+import ButtonC from "../../../../../components/ButtinC/ButtonC";
+import CheckBox from "../../../../../components/CheckBox/CheckBox";
 
 export default function AddRoles() {
   return (

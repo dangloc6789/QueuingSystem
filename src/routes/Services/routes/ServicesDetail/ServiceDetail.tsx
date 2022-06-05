@@ -194,7 +194,7 @@ export default function ServiceDetail() {
         }}
       >
         <AiFillPlusSquare />
-        <span>Cập nhập thiết bị</span>
+        <span>Cập nhập danh sách</span>
       </div>
     </>
   );

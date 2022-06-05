@@ -11,6 +11,7 @@ const tableData:Array<serviceType> = [
     Detail: "Chi tiết",
     Update: "Cập nhập",
     ProductID: 12313,
+    STT:2010001,
   },
   {
     key: 2,
@@ -21,6 +22,7 @@ const tableData:Array<serviceType> = [
     Detail: "Chi tiết",
     Update: "Cập nhập",
     ProductID: 1213,
+    STT:2010002,
   },
   {
     key: 3,
@@ -31,6 +33,7 @@ const tableData:Array<serviceType> = [
     Detail: "Chi tiết",
     Update: "Cập nhập",
     ProductID: 12154313,
+    STT:2010003,
   },
   {
     key: 4,
@@ -41,6 +44,7 @@ const tableData:Array<serviceType> = [
     Detail: "Chi tiết",
     Update: "Cập nhập",
     ProductID: 12545313,
+    STT:2010004,
   },
 ]
 const initialState:stateType = {
@@ -78,4 +82,5 @@ type serviceType = {
   Detail: string,
   Update: string,
   ProductID: number,
+  STT:number,
 }
