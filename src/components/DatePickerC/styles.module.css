@@ -1,0 +1,21 @@
+.label__picker{
+    font-weight: 600;
+    display: block;
+    line-height: 1.8rem;
+}
+.custom__picker{
+    width: 100%;
+    outline: none;
+    border:  1.5px solid #D4D4D7;
+    border-radius: 10px;
+    padding: 5px 10px;
+    
+}
+
+.custom__picker:hover,.custom__picker:focus .ant-picker-focused{
+    border-color: #FF7506!important;
+    border-right-width: 1px !important;
+}
+.ant-picker-suffix{
+    background-color: #FF7506!important;
+}

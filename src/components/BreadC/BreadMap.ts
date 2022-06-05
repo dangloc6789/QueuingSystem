@@ -37,9 +37,39 @@ const patharray: Array<PathType> = [
     prefix: "Dịch vụ"
   },
   {
+    pathName: "ServiceAdd",
+    name: "Thêm dịch vụ",
+    path: "/ServiceAdd",
+    prefix: "Dịch vụ"
+  },
+  {
+    pathName: "ServiceDetail",
+    name: "Chi tiết",
+    path: "/ServiceDetail",
+    prefix: "Dịch vụ"
+  },
+  {
+    pathName: "ServiceUpdate",
+    name: "Cập nhật",
+    path: "/ServiceUpdate",
+    prefix: "Dịch vụ"
+  },
+  {
     pathName: "Number",
     name: "Danh sách cấp số",
     path: "/Number",
+    prefix: "Cấp số"
+  },
+  {
+    pathName: "NumberAdd",
+    name: "Cấp sổ mới",
+    path: "/NumberAdd",
+    prefix: "Cấp số"
+  },
+  {
+    pathName: "NumberDetail",
+    name: "Chi tiết",
+    path: "/NumberDetail",
     prefix: "Cấp số"
   },
   {

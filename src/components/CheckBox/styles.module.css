@@ -1,0 +1,12 @@
+.input__main {
+    color: #282739 !important;
+    font-weight: 600;
+}
+.check__box {
+    padding: 10px;
+    margin-right: 5px;
+}
+.checkbox{
+    min-width: 200px;
+    margin: 20px 0;
+}

@@ -41,40 +41,22 @@ const handleClick = (e: React.MouseEvent) => {
 }
 const tableColumn = [
   {
-    title: 'Mã dịch vụ',
-    dataIndex: 'ServiceCode',
+    title: 'Tên vai trò',
+    dataIndex: 'DeviceCode',
   },
   {
-    title: 'Tên dịch vụ',
-    dataIndex: 'ServiceName',
+    title: 'Số người dùng',
+    dataIndex: 'DeviceName',
   },
   {
     title: 'Mô tả',
-    dataIndex: 'Description',
+    dataIndex: 'IPAddress',
   },
   {
-    title: 'Trạng thái hoạt động',
-    dataIndex: 'WorkingState',
-    render: (state: "Ngưng hoạt động" | "Hoạt động") => {
-      if (state === "Ngưng hoạt động") {
-        return <div style={{ display: "flex", alignItems: "center" }}><span style={style.IconRed}></span><span>{state}</span></div>
-      } else {
-        return <div style={{ display: "flex", alignItems: "center" }}><span style={style.IconGreen}></span><span>{state}</span></div>
-      }
-    }
-  },
-  {
-    title: '',
-    dataIndex: 'Detail',
-    render: (text: string, {ProductID}:any) => {
-      return <Link to={`ServiceDetail/${ProductID}`} style={{ textDecoration: "underline" }}>{text}</Link>
-    } 
-  },
-  {
-    title: '',
+    title: 'Cập nhật ',
     dataIndex: 'Update',
     render: (text: string, {ProductID}: any) => {
-      return <Link to={`ServiceUpdate/${ProductID}`}  style={{ textDecoration: "underline" }}>{text}</Link>
+      return <Link to={`DeviceUpdate/${ProductID}`}  style={{ textDecoration: "underline" }}>{text}</Link>
     }
   },
 ]

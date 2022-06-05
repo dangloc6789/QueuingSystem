@@ -131,3 +131,32 @@
   .device [class~=buttonHolder] > button {
     margin: 0 1rem;
   }
+
+ .main__role{
+   display: flex;
+ }
+.left__role{
+  width: 50%;
+  margin-right: 10px;
+}
+.right__role{
+  width: 50%;
+}
+.form__check{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.title__main {
+  color: var(--fontColor);
+  font-size: 1.25rem;
+  padding: 0.75rem 0;
+  font-weight: 700;
+}
+
+.main__right{
+width: 100%;
+background-color: #FFF2E7 ;
+}

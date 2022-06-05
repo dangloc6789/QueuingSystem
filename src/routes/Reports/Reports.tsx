@@ -6,6 +6,7 @@ import tableColumn from './table/ReportTable';
 import { AiFillPlusSquare } from "react-icons/ai";
 import { useNavigate } from 'react-router-dom';
 import { useAppSelector } from '../../redux/hook';
+import DatePickerC from '../../components/DatePickerC/DatePickerC';
 export default function Reports() {
   const navigate = useNavigate()
   const state = useAppSelector((state) => state.report)
@@ -40,29 +41,12 @@ export default function Reports() {
     <>
     <div className={styles.number} style={{paddingRight: "2rem"}}>
       <div>Danh sách thiết bị</div>
-      <div>
-        <div className='select'>
-          <SelectC
-            onChange={(value) => { setWorkingStateFilter((Wstate) => Wstate = value as DeviceType) }}
-            label='Nguồn cấp'
-            defaultValue="Tất cả"
-            style={{ width: "14rem" }}>
-            <Option value="Tất cả">Tất cả</Option>
-            <Option value="Hoạt động">Kiosk</Option>
-            <Option value="Ngưng hoạt động">Hệ thống</Option>
-          </SelectC>
+      <div style={{ display: "flex" }}>
+        <div className={styles.select_c}>
+        <DatePickerC label="Chọn ngày" />
         </div>
-        <div className='select'>
-          <SelectC
-            onChange={(value) => { setConnectStatusType((Cstate) => Cstate = value as ConnectStatusType) }}
-            label='Trạng thái kết nối'
-            defaultValue="Tất cả"
-            style={{ width: "14rem"}}>
-            <Option value="Tất cả">Tất cả</Option>
-            <Option value="Đang chờ">Đang chờ</Option>
-            <Option value="Đã sử dụng">Đã sử dụng</Option>
-            <Option value="Bỏ qua">Bỏ qua</Option>
-          </SelectC>
+        <div className={styles.select_c}>
+        <DatePickerC label="Chọn ngày" />
         </div>
       </div>
       <br />

@@ -55,7 +55,7 @@
   font-weight: 600;
 }
 /* DeviceDetail */
-.detailContain {
+.detailContain ,.dinhcao{
   padding: 0 1rem;
   background-color: white;
   border-radius: 16px;
@@ -130,4 +130,97 @@
 }
 .device [class~=buttonHolder] > button {
   margin: 0 1rem;
+}
+.body__input{
+  width: 100%;
+  display: flex;
+
+}
+.left__input {
+  width: 50%;
+  margin: 0 5px;
+}
+.right__input{
+  width: 50%;
+  margin: 0 5px;
+}
+.height__119 {
+  height: 119px;
+}
+
+.title__main {
+  color: var(--fontColor);
+  font-size: 1.25rem;
+  padding: 0.75rem 0;
+  font-weight: 700;
+}
+.quy__tac{
+  display: flex;
+}
+.quy__tac_left {
+  width: 20%;
+}
+.quy__tac_right {
+  width: 10%;
+}
+.width__100{
+  width: 70px!important;
+  text-align: center;
+}
+
+.from__to {
+  display: flex;
+  align-items: center;
+}
+.input__main__label{
+  color: #282739 !important;
+  font-weight: 600;
+  margin:  0 10px 10px 10px ;
+}
+
+.detail {
+  display: flex;
+
+}
+.detail > div:first-child {
+  color: var(--fontColor);
+  font-size: 1.5rem;
+  padding: 0.75rem 0;
+  font-weight: 700;
+}
+.detail > div:nth-child(2) {
+  display: flex;
+}
+.detail > div:nth-child(2) > [class=select]{
+  padding-right: 1rem;
+}
+.main__detail{
+  display: flex;
+}
+.left__table{
+  width: 80%;
+  margin-left: 20px;
+}
+
+.detail__title{
+  color: #282739 !important;
+  font-weight: 600;
+  display: inline-block;
+  width: 100px;
+}
+.detail__box{
+  margin: 10px 0;
+}
+.margin_t{
+  padding-top: 10px;
+}
+.custom__select{
+  display: flex;
+}
+.select_c{
+  margin-right: 10px;
+}
+
+.margin_t_10{
+  margin-top: 22px;
 }

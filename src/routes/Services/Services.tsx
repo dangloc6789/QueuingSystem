@@ -55,7 +55,7 @@ export default function Services() {
           />
         </div>
       </div>
-      <div ref={addRef} className={styles.Add} onClick={() => { navigate("DeviceAdd") }}><AiFillPlusSquare /><span>Thêm thiết bị</span></div>
+      <div ref={addRef} className={styles.Add} onClick={() => { navigate("ServiceAdd") }}><AiFillPlusSquare /><span>Thêm dịch vụ</span></div>
     </>
   )
 }

@@ -15,10 +15,16 @@ import NumberOutlet from './routeoutlets/NumberOutlet';
 import Services from './routes/Services/Services';
 import Number from './routes/Number/Number';
 import Reports from './routes/Reports/Reports';
-import Systems from './routes/Systems/Systems';
 import Accouts from './routes/Systems/Accouts/Accouts';
 import Roles from './routes/Systems/Roles/Roles';
 import Diary from './routes/Systems/Diary/Diary';
+import ServicesAdd from './routes/Services/routes/ServicesAdd/ServicesAdd';
+import ServiceDetail from './routes/Services/routes/ServicesDetail/ServiceDetail';
+import ServiceUpdate from './routes/Services/routes/ServicesUpdate/ServiceUpdate';
+import NumberAdd from './routes/Number/routes/NumberAdd/NumberAdd';
+import NumberDetail from './routes/Number/routes/NumberDetail/NumberDetail';
+import AddRoles from './routes/Services/routes/AddRoles/AddRoles';
+
 function App() {
   return (
     <HashRouter>
@@ -28,10 +34,12 @@ function App() {
         <Route element={<MenuOutlet />}>
           <Route path="UserProfile" element={<UserProfile />}></Route>
           <Route path="Dashboard" element={<Dashboard />}></Route>
-          <Route path="Number" element={<NumberOutlet/>}>
+          <Route path="Number" element={<NumberOutlet />}>
             <Route index element={<Number />}></Route>
+            <Route path="NumberAdd" element={<NumberAdd />}></Route>
+            <Route path="NumberDetail/:ProductID" element={<NumberDetail />}></Route>
           </Route>
-          <Route path="Reports" element={<Reports/>}></Route>
+          <Route path="Reports" element={<Reports />}></Route>
           <Route path="Device" element={<DeviceOutlet />}>
             <Route index element={<Device />}></Route>
             <Route path="DeviceAdd" element={<DeviceAdd />}></Route>
@@ -41,13 +49,21 @@ function App() {
 
           <Route path="Service" element={<ServiceOutlet />}>
             <Route index element={<Services />}></Route>
+            <Route path="ServiceAdd" element={<ServicesAdd />}></Route>
+            <Route path="AddRole" element={<AddRoles />}></Route>
+            <Route path="ServiceDetail/:ProductID" element={<ServiceDetail />}></Route>
+            <Route path="ServiceUpdate/:ProductID" element={<ServiceUpdate />}></Route>
           </Route>
 
-          <Route path="Systems" element={<Systems />}>
-            <Route index element={<Systems />}></Route>
+          <Route path="Systems" element={<Roles />}>
+            <Route index element={<Roles />}></Route>
             <Route path="Accouts" element={<Accouts />}></Route>
-            <Route path="Roles" element={<Roles />}></Route>
+            <Route path="Roles" element={<Roles />}>
+
+            </Route>
+            <Route path="AddRole" element={<AddRoles />}></Route>
             <Route path="Diary" element={<Diary />}></Route>
+
           </Route>
         </Route>
       </Routes>
