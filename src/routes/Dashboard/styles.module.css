@@ -232,3 +232,189 @@ __container {
   line-height: 1.2rem;
   color: orange-400;
 }
+
+.dashboardDay-container {
+  padding: 2.4rem 2.4rem 6rem 2.4rem;
+  background-color: white;
+  border-radius: 1.2rem;
+}
+.dashboardDay-container-header {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboardDay-container-header .header-title h2 {
+  color: gray-500;
+  line-height: 3rem;
+}
+.dashboardDay-container-header .header-title p {
+  color: gray-200;
+}
+.dashboardDay-container-header .header-followday {
+  display: flex;
+  align-items: center;
+}
+.dashboardDay-container-header .header-followday span {
+  font-size: 1.6rem;
+  color: gray-500;
+  font-weight: 600;
+  line-height: 2.4rem;
+  margin-right: 0.8rem;
+}
+.dashboardDay-container-header .header-followday .dropdown {
+  width: 10.6rem;
+  position: relative;
+}
+.dashboardDay-container-header .header-followday .dropdown-select {
+  padding: 0.9rem 1.2rem;
+  font-size: 1.6rem;
+  border-radius: 0.8rem;
+  border: 0.2rem solid gray-100;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.dashboardDay-container-header .header-followday .dropdown-select .select {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: gray-300;
+}
+.dashboardDay-container-header .header-followday .dropdown-select img {
+  width: 100%;
+  height: 100%;
+  max-width: 1.2rem;
+  max-height: 0.6rem;
+  object-fit: cover;
+}
+.dashboardDay-container-header .header-followday .dropdown-list {
+  border-radius: 0.4rem;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s linear, visibility 0.2s linear;
+  transform: translateY(10px);
+}
+.dashboardDay-container-header .header-followday .dropdown-list:before {
+  content: "";
+  width: 100%;
+  height: 1rem;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
+.dashboardDay-container-header .header-followday .dropdown:hover .dropdown-list {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+.dashboardDay-container-header .header-followday .dropdown-list__item {
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-weight: 400;
+  color: gray-400;
+  cursor: pointer;
+}
+.dashboardDay-container-content {
+  position: relative;
+  overflow: hidden;
+}
+.dashboardDay-container-content-box {
+  position: relative;
+  border-bottom: 0.1rem solid br;
+  padding: 2.9rem 0 0.5rem;
+}
+.dashboardDay-container-content-box p {
+  line-height: 1.4rem;
+  color: gray-400;
+}
+.dashboardDay-container-content .imgchart {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 6rem;
+  width: 100%;
+  margin-left: 3rem;
+}
+.dashboardDay-container-content .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  content: "";
+  right: 27.5%;
+  bottom: 63.3%;
+}
+.dashboardDay-container-content .info .iconselect {
+  width: 100%;
+  height: 100%;
+  max-width: 2.2rem;
+  max-height: 2rem;
+}
+.dashboardDay-container-content .info button {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 3.3rem;
+  font-size: 1.4rem;
+  color: white;
+  background-color: blue;
+  border-radius: 1.2rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  border: none;
+}
+.dashboardDay-container-content .info button::before {
+  position: absolute;
+  content: "";
+  left: 4.475rem;
+  top: 2.136rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: #4277ff;
+  border-radius: 0.1rem;
+  transform: rotate(220deg);
+}
+.dashboardDay-container-content-subbox {
+  display: flex;
+}
+.dashboardDay-container-content-subbox .col1 {
+  flex: 1 1 22rem;
+  margin-left: 4rem;
+}
+.dashboardDay-container-content-subbox .col2 {
+  flex: 1 1 15rem;
+}
+.dashboardDay-container-content-subbox .col3 {
+  flex: 1 1 17rem;
+}
+.dashboardDay-container-content-subbox .col4 {
+  flex: 1 1 5rem;
+}
+.dashboardDay-container-content .param {
+  display: inline-block;
+  position: relative;
+}
+.dashboardDay-container-content .param span, .dashboardDay-container-content .param h5, .dashboardDay-container-content .param h6 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: gray-400;
+}
+.dashboardDay-container-content .param h5 {
+  position: absolute;
+  top: 0.5rem;
+  right: 2.5rem;
+  font-size: 1.4rem;
+}
+.dashboardDay-container-content .param h6 {
+  padding-left: 2rem;
+}
