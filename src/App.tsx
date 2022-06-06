@@ -25,6 +25,8 @@ import NumberAdd from './routes/Number/routes/NumberAdd/NumberAdd';
 import NumberDetail from './routes/Number/routes/NumberDetail/NumberDetail';
 import AddRoles from './routes/Systems/Roles/routes/AddRoles/AddRoles';
 import Systems from './routes/Systems/Systems';
+import AccoutAdd from './routes/Systems/Accouts/routes/AccoutsAdd/AccoutsAdd';
+import AccoutUpdate from './routes/Systems/Accouts/routes/AccoutsUpdate/AccoutsUpdate';
 
 function App() {
   return (
@@ -56,17 +58,19 @@ function App() {
           <Route path="Service" element={<ServiceOutlet />}>
             <Route index element={<Services />}></Route>
             <Route path="ServiceAdd" element={<ServicesAdd />}></Route>
-            <Route path="AddRole" element={<AddRoles />}></Route>
             <Route path="ServiceDetail/:ProductID" element={<ServiceDetail />}></Route>
             <Route path="ServiceUpdate/:ProductID" element={<ServiceUpdate />}></Route>
           </Route>
 
           <Route path="Systems/Accouts" element={<Accouts />}>
-            <Route index element={<Accouts />}></Route>        
+            <Route index element={<Accouts />}></Route>  
+            <Route path="AccoutAdd" element={<AccoutAdd />}></Route>
+            <Route path="AccoutUpdate" element={<AccoutUpdate />}></Route>      
           </Route>
 
           <Route path="Systems/Roles" element={<Roles />}>
-            <Route index element={<Roles />}></Route>        
+            <Route index element={<Roles />}></Route> 
+            <Route path="AddRoles" element={<AddRoles />}></Route>       
           </Route>
 
           <Route path="Systems/Diary" element={<Diary />}>

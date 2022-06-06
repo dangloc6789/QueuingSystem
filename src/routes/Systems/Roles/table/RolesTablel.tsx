@@ -42,21 +42,21 @@ const handleClick = (e: React.MouseEvent) => {
 const tableColumn = [
   {
     title: 'Tên vai trò',
-    dataIndex: 'DeviceCode',
+    dataIndex: 'RoleName',
   },
   {
     title: 'Số người dùng',
-    dataIndex: 'DeviceName',
+    dataIndex: 'UserNumber',
   },
   {
     title: 'Mô tả',
-    dataIndex: 'IPAddress',
+    dataIndex: 'Describe',
   },
   {
     title: 'Cập nhật ',
     dataIndex: 'Update',
     render: (text: string, {ProductID}: any) => {
-      return <Link to={`DeviceUpdate/${ProductID}`}  style={{ textDecoration: "underline" }}>{text}</Link>
+      return <Link to={`AddRole`}  style={{ textDecoration: "underline" }}>{text}</Link>
     }
   },
 ]

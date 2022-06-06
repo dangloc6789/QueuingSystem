@@ -30,7 +30,6 @@ export default function Accouts() {
   return (
     <>
       <div className={styles.accouts} style={{ paddingRight: "2rem" }}>
-        <div>Danh sách thiết bị</div>
         <div>
           <div className='select'>
             <SelectC
@@ -56,7 +55,7 @@ export default function Accouts() {
           />
         </div>
       </div>
-      <div ref={addRef} className={styles.Add} onClick={() => { navigate("ServiceAdd") }}><AiFillPlusSquare /><span>Thêm dịch vụ</span></div>
+      <div ref={addRef} className={styles.Add} onClick={() => { navigate("AccoutAdd") }}><AiFillPlusSquare /><span>Thêm tài khoản</span></div>
     </>
   )
 }

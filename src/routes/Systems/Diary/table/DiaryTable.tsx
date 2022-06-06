@@ -42,41 +42,19 @@ const handleClick = (e: React.MouseEvent) => {
 const tableColumn = [
   {
     title: 'Tên đăng nhập',
-    dataIndex: 'Account',
-  },
-  {
-    title: 'Họ tên',
     dataIndex: 'UserName',
   },
   {
-    title: 'Số điện thoại',
-    dataIndex: 'PhoneNumber',
+    title: 'Thời gian tác động',
+    dataIndex: 'Time',
   },
   {
-    title: 'Email',
-    dataIndex: 'Email',
+    title: 'IP thực hiện',
+    dataIndex: 'IP',
   },
   {
-    title: 'Vai trò',
-    dataIndex: 'Role',
-  },
-  {
-    title: 'Trạng thái hoạt động',
-    dataIndex: 'WorkingState',
-    render: (state: "Ngưng hoạt động" | "Hoạt động") => {
-      if (state === "Ngưng hoạt động") {
-        return <div style={{ display: "flex", alignItems: "center" }}><span style={style.IconRed}></span><span>{state}</span></div>
-      } else {
-        return <div style={{ display: "flex", alignItems: "center" }}><span style={style.IconGreen}></span><span>{state}</span></div>
-      }
-    }
-  },
-  {
-    title: '',
-    dataIndex: 'Update',
-    render: (text: string, {Account}: any) => {
-      return <Link to={`AccoutUpdate/${Account}`}  style={{ textDecoration: "underline" }}>{text}</Link>
-    }
+    title: 'Thao tác thực hiện',
+    dataIndex: 'Action',
   },
 ]
 export default tableColumn

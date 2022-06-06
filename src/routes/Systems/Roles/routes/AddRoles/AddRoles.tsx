@@ -7,23 +7,23 @@ import CheckBox from "../../../../../components/CheckBox/CheckBox";
 export default function AddRoles() {
   return (
     <>
-      <div className={styles.device} style={{ paddingRight: "2rem" }}>
+      <div className={styles.role} style={{ paddingRight: "2rem" }}>
         <div>Quản lý thiết bị</div>
         <div className={styles.detailContain} >
           <div>Thông tin vai trò</div>
           <div className={styles.main__role}>
             <div className={styles.left__role}>
               <Controller
-                name="DeviceCode"
+                name="RoleName"
 
                 render={({ field: { onChange, value } }) =>
-                  <InputC type="text" placeholder='Nhập tên vai trò' id='DeviceCode' onChange={onChange} value={value} >Nhập tên vai trò: </InputC>}
+                  <InputC type="text" placeholder='Nhập tên vai trò' id='RoleName' onChange={onChange} value={value} >Nhập tên vai trò: </InputC>}
               />
               <Controller
-                name="DeviceName"
+                name="Describe"
 
                 render={({ field: { onChange, value } }) =>
-                  <InputC type="text" placeholder='Mô tả' id='DeviceName' className={styles.height__119} onChange={onChange} value={value} >Mô tả: </InputC>}
+                  <InputC type="text" placeholder='Mô tả' id='Describe' className={styles.height__119} onChange={onChange} value={value} >Mô tả: </InputC>}
               />
               <br />
               <p style={{ color: "#535261", fontSize: "0.875rem" }} ><span style={{ color: "red" }}>*</span>Là trường thông tin bắt buộc</p>
