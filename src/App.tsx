@@ -65,7 +65,7 @@ function App() {
           <Route path="Systems/Accouts" element={<Accouts />}>
             <Route index element={<Accouts />}></Route>  
             <Route path="AccoutAdd" element={<AccoutAdd />}></Route>
-            <Route path="AccoutUpdate" element={<AccoutUpdate />}></Route>      
+            <Route path="AccoutUpdate/:Account" element={<AccoutUpdate />}></Route>      
           </Route>
 
           <Route path="Systems/Roles" element={<Roles />}>

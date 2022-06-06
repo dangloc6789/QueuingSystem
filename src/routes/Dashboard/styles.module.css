@@ -22,3 +22,213 @@ __container {
     justify-content: flex-start;
     position: relative;
 }
+.overview .title {
+  font-weight: 700;
+  line-height: 3.6rem;
+  color: orange-500;
+  margin-bottom: 1.6rem;
+}
+.overview-container {
+  padding: 1.6rem 2.4rem 3rem;
+  background-color: white;
+  box-shadow: 0 0.4rem 0.6rem rgba(219, 219, 219, 0.5);
+  border-radius: 0.8rem 0 0 0.8rem;
+}
+.overview-container-main {
+  display: flex;
+  box-shadow: 0.2rem 0.2rem 1.5rem rgba(70, 64, 67, 0.1);
+  border-radius: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.overview-container-main-box {
+  display: flex;
+  padding: 1.2rem 1.6rem;
+}
+.overview-container-main-box.column {
+  display: flex;
+  flex-direction: column;
+}
+.overview-container-main-box .image .imgpercent {
+  width: 100%;
+  height: 100%;
+  max-width: 6rem;
+  max-height: 6rem;
+  object-fit: cover;
+  margin-right: 1.2rem;
+}
+.overview-container-main-box .parameter h3 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 3.6rem;
+  color: gray-400;
+}
+.overview-container-main-box .parameter div {
+  display: flex;
+  align-items: center;
+}
+.overview-container-main-box .parameter div img {
+  width: 100%;
+  height: 100%;
+  max-width: 1.4rem;
+  max-height: 1.4rem;
+  object-fit: cover;
+  margin-right: 0.4rem;
+}
+.overview-container-main-box .parameter div span {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+  color: orange-500;
+}
+.overview-container-main-box .parameter div span.blue {
+  color: blue;
+}
+.overview-container-main-box .parameter div span.green {
+  color: green;
+}
+.overview-container-main-box li p {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  color: gray-300;
+}
+.overview-container-main-box li span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  color: orange-500;
+}
+.overview-container-main-box li span.blue {
+  color: blue;
+}
+.overview-container-main-box li span.green {
+  color: green;
+}
+.overview-container-main-box li.yello {
+  color: orange-500;
+}
+.overview-container-main-box li.blue {
+  color: blue;
+}
+.overview-container-main-box li.green {
+  color: green;
+}
+.overview-container-main-box li.pink {
+  color: pink-light;
+}
+.overview-container-datepicker .sdp {
+  width: 100%;
+}
+.overview-container-datepicker .sdp--month-name {
+  color: orange-500;
+}
+.overview-container-datepicker p {
+  color: orange-500;
+}
+.overview-container-datepicker .sdp--text {
+  font-size: 1.6rem;
+  line-height: 0.8rem;
+  font-weight: 700;
+}
+.overview-container-datepicker .sdp--month-picker {
+  padding: 0 1.6rem 1.6rem 1.6rem;
+  border-bottom: 0.1rem solid blue-100;
+}
+.overview-container-datepicker .sdp--square-btn__shadowed, .overview-container-datepicker .sdp--square-btn__shadowed:focus:hover {
+  box-shadow: none;
+}
+.overview-container-datepicker svg {
+  display: block;
+  max-width: 100%;
+  color: orange-500;
+}
+.overview-container-datepicker .sdp--dates-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  margin: 0.5rem 0 0;
+}
+.overview-container-datepicker .sdp--square-btn {
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  width: 3rem;
+}
+.overview-container-datepicker .sdp--date-btn__selected {
+  background-color: orange-500;
+  box-shadow: transparent 0px 0px 0px 0px, transparent 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  color: white;
+}
+.dashboardmain-container .title {
+  font-weight: 700;
+  line-height: 3.6rem;
+  color: orange-500;
+  margin: 1.6rem 0;
+}
+.dashboardmain-container-box {
+  display: inline-block;
+  padding: 0.7rem 2rem 0 1.2rem;
+  border-radius: 1rem;
+  background-color: white;
+  margin-right: 1.3rem;
+  margin-bottom: 1.2rem;
+}
+.dashboardmain-container-box:nth-child(5) {
+  margin: 0;
+}
+.dashboardmain-container-box .content {
+  display: flex;
+  align-items: center;
+}
+.dashboardmain-container-box .content .imgicon {
+  width: 100%;
+  height: 100%;
+  max-width: 4.8rem;
+  max-height: 4.8rem;
+  object-fit: cover;
+  margin-right: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.dashboardmain-container-box .content .heading {
+  line-height: 1.8rem;
+}
+.dashboardmain-container-box .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboardmain-container-box .info h4 {
+  line-height: 4.5rem;
+  padding-right: 2.5rem;
+}
+.dashboardmain-container-box .info p {
+  height: 1.5rem;
+  width: 5rem;
+  display: flex;
+  background: rgba(255, 149, 1, 0.15);
+  border-radius: 7.18115px;
+  justify-content: center;
+  align-items: center;
+}
+.dashboardmain-container-box .info p .iconup, .dashboardmain-container-box .info p .icondown {
+  width: 100%;
+  height: 100%;
+  max-width: 0.6rem;
+  max-height: 0.6rem;
+  object-fit: cover;
+  margin-right: 0.35rem;
+}
+.dashboardmain-container-box .info p span {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+  color: orange-400;
+}
